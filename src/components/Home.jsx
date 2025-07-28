@@ -59,9 +59,9 @@ const Home = () => {
                 <div className="MainContent">
                     <div className="PhotoGalleryContainer">
                         <div className="PhotoWrapper">
+                            <button className="PhotoButton Left" onClick={ToPrevImage} ><FaArrowLeft className="ButtonArrow"/></button>
                             <img src={images[currentIndex]} className="PhotoGalleryImage"/>
-                            <button className="PhotoButtonLeft" onClick={ToPrevImage} ><FaArrowLeft /></button>
-                            <button className="PhotoButtonRight" onClick={ToNextImage}><FaArrowRight/></button>
+                            <button className="PhotoButton Right" onClick={ToNextImage}><FaArrowRight className="ButtonArrow"/></button>
                         </div>
                     </div>
                     <div className="RealityCheck">
