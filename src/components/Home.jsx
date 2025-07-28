@@ -1,7 +1,50 @@
-import React from 'react';
+import {React, useState, useEffect, useRef} from 'react';
 import '../styles/Home.css'
 
+import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+
+import img1 from '../assets/DevTest/Sample1.png'
+import img2 from '../assets/DevTest/Sample2.png'
+import img3 from '../assets/DevTest/Sample3.png'
+import img4 from '../assets/DevTest/Sample4.png'
+
+const images = [img1, img2, img3, img4]
+
 const Home = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [zoomed, setZoomed] = useState(false)
+    const intervalRef = useRef(null);
+
+    const startAutoPlay = () => {
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex+1) % images.length);
+        }, 8000)
+    }
+
+    const resetAutoPlay = () => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+        }
+        startAutoPlay();
+    }
+
+    useEffect(() => {
+        startAutoPlay()
+        return () => clearInterval(intervalRef.current);
+    }, []);
+
+    const ToNextImage = () => {
+        let i = currentIndex;
+        i === images.length-1 ? setCurrentIndex(0) : setCurrentIndex(i + 1);
+        resetAutoPlay();
+    }
+
+    const ToPrevImage = () => {
+        let i = currentIndex;
+        i === 0 ? setCurrentIndex(images.length-1) : setCurrentIndex(i - 1);
+        resetAutoPlay();
+    }
+
     return (
         <div className='PageContainer'>
             <div className="TagLine">
@@ -15,7 +58,11 @@ const Home = () => {
             <div className="BodyContainer">
                 <div className="MainContent">
                     <div className="PhotoGalleryContainer">
-                        Photo Gallery Placeholder
+                        <div className="PhotoWrapper">
+                            <img src={images[currentIndex]} className="PhotoGalleryImage"/>
+                            <button className="PhotoButtonLeft" onClick={ToPrevImage} ><FaArrowLeft /></button>
+                            <button className="PhotoButtonRight" onClick={ToNextImage}><FaArrowRight/></button>
+                        </div>
                     </div>
                     <div className="RealityCheck">
                         Reality Check Placeholder
