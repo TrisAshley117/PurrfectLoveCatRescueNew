@@ -64,8 +64,10 @@ const Home = () => {
                             <button className="PhotoButton Right" onClick={ToNextImage}><FaArrowRight className="ButtonArrow"/></button>
                         </div>
                     </div>
-                    <div className="RealityCheck">
-                        Reality Check Placeholder
+                    <div className='RealityCheckContainer'>
+                        <div className="RealityCheck">
+                            Reality Check Placeholder
+                        </div>
                     </div>
                 </div>
                 <div className="EventsContainer">
