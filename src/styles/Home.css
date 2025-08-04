@@ -109,6 +109,41 @@
     font-size: 24px;
 }
 
+.PhotoGalleryTracker {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 10px;
+    z-index:3;
+    background-color: var(--color-secondary);
+    border-radius:4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    width: 20%;
+    max-width: 150px;
+    padding: 4px;
+    cursor: default;
+}
+
+.PhotoGalleryTrackerCricle {
+    font-size: 1rem;
+    color: grey;
+    transition: all ease 0.3s;
+    cursor:pointer;
+}
+
+.PhotoGalleryTrackerCricle:hover {
+    color: lightgrey;
+}
+
+.PhotoGalleryTrackerCricle.Active {
+    color: var(--color-primary)
+}
+
 .RealityCheckContainer {
     display: flex;
     align-items: center;

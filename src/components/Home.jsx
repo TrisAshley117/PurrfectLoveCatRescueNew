@@ -1,7 +1,8 @@
 import {React, useState, useEffect, useRef} from 'react';
 import '../styles/Home.css'
 
-import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+import {FaArrowLeft, FaArrowRight, FaCircle} from 'react-icons/fa'
+import ZoomedImage from '../components/ZoomedImage.jsx'
 
 import img1 from '../assets/DevTest/Sample1.png'
 import img2 from '../assets/DevTest/Sample2.png'
@@ -12,8 +13,11 @@ const images = [img1, img2, img3, img4]
 
 const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [zoomed, setZoomed] = useState(false)
     const intervalRef = useRef(null);
+
+    const [imageZoomed, setImageZoomed] = useState(false);
+    const zoomImageIn = () =>  { setImageZoomed(true); };
+    const zoomImageOut = () => { setImageZoomed(false); };
 
     const startAutoPlay = () => {
         intervalRef.current = setInterval(() => {
@@ -29,9 +33,20 @@ const Home = () => {
     }
 
     useEffect(() => {
-        startAutoPlay()
+        if (imageZoomed) {
+            if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+                intervalRef.current = null;
+            }
+            return;
+        }
+
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 8000);
+
         return () => clearInterval(intervalRef.current);
-    }, []);
+    }, [imageZoomed]);
 
     const ToNextImage = () => {
         let i = currentIndex;
@@ -42,6 +57,11 @@ const Home = () => {
     const ToPrevImage = () => {
         let i = currentIndex;
         i === 0 ? setCurrentIndex(images.length-1) : setCurrentIndex(i - 1);
+        resetAutoPlay();
+    }
+
+    const SetImage = (i) => {
+        setCurrentIndex(i)
         resetAutoPlay();
     }
 
@@ -60,8 +80,16 @@ const Home = () => {
                     <div className="PhotoGalleryContainer">
                         <div className="PhotoWrapper">
                             <button className="PhotoButton Left" onClick={ToPrevImage} ><FaArrowLeft className="ButtonArrow"/></button>
-                            <img src={images[currentIndex]} className="PhotoGalleryImage"/>
+                            <img src={images[currentIndex]} className="PhotoGalleryImage" onClick={zoomImageIn}/>
                             <button className="PhotoButton Right" onClick={ToNextImage}><FaArrowRight className="ButtonArrow"/></button>
+                            <div className="PhotoGalleryTracker">
+                                {[...Array(images.length)].map((_, i) => {
+                                    return (
+                                        i === currentIndex ? <FaCircle className="PhotoGalleryTrackerCricle Active" onClick={() => SetImage(i)}/> 
+                                        : <FaCircle className="PhotoGalleryTrackerCricle" onClick={() => SetImage(i)}/>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                     <div className='RealityCheckContainer'>
@@ -74,6 +102,7 @@ const Home = () => {
                     Events Placeholder
                 </div>
             </div>
+            <ZoomedImage IsVisible={imageZoomed} imgSrc={images[currentIndex]} zoomOutCommand={zoomImageOut} />
         </div>
     )
 }
