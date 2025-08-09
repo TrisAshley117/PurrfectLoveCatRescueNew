@@ -168,6 +168,24 @@
     height: 100%;
 }
 
+.EventsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.EventsHeader {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.Events {
+    height: 100%;
+    width: 90%;
+}
+
 @media (max-width: 768px) {
     .MissionStatementContainer {
         display: flex;

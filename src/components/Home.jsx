@@ -99,7 +99,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="EventsContainer">
-                    Events Placeholder
+                    <div className="EventsContent">
+                        <div className="EventsHeader">
+                                <b>Events</b>
+                        </div>
+                        <ul className="Events">
+                            <li>Daily adoptions at Pet Super Market in Vestavia!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <ZoomedImage IsVisible={imageZoomed} imgSrc={images[currentIndex]} zoomOutCommand={zoomImageOut} />
