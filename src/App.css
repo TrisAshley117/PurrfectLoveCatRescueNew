@@ -37,8 +37,19 @@ html, body, #root {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
-  main {
-    padding: 2rem;
+@media (max-width: 768px) {
+  html, body, #root {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 2px;
+  }
+
+  .Main {
+    padding: 4px;
   }
 }
