@@ -29,8 +29,8 @@
     position: absolute;
     top: 0;
     right: 1.5rem;
-    opacity: 0.4;
-    font-size: 1rem;
+    opacity: 0.6;
+    font-size: 3rem;
     background: none;
     border: none;
     color: var(--color-primary);
@@ -52,7 +52,6 @@
     }
 
     .CloseButton {
-        font-size: 3rem;
         opacity: 1;
     }
 }
