@@ -101,10 +101,23 @@ const Home = () => {
                 <div className="EventsContainer">
                     <div className="EventsContent">
                         <div className="EventsHeader">
+                                <b>Adoptions</b>
+                        </div>
+                        <ul className="Events">
+                            <li>Weekly adoptions held at Pet Super Market in Vestavia!</li>
+                            <ul className="SubEvents">
+                                <li><b>Friday:</b> 2:30 PM - 6:00 PM</li>
+                                <li><b>Saturday:</b> 1:00 PM - 4:30 PM</li>
+                                <li><b>Sunday:</b> 1:00 PM - 4:30 PM</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div className="EventsContent">
+                        <div className="EventsHeader">
                                 <b>Events</b>
                         </div>
                         <ul className="Events">
-                            <li>Daily adoptions at Pet Super Market in Vestavia!</li>
+                            <li>No upcoming events</li>
                         </ul>
                     </div>
                 </div>
