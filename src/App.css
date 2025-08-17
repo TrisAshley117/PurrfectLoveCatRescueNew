@@ -34,7 +34,19 @@ html, body, #root {
 }
 
 .HomePage {
-  display: flex;
+  display: block;
+}
+
+.HomePage.Invisible {
+  display: none;
+}
+
+.DonatePage {
+  display: block;
+}
+
+.DonatePage.Invisible {
+  display: none;
 }
 
 @media (max-width: 768px) {

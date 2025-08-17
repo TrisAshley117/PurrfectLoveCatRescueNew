@@ -214,6 +214,10 @@
         gap: 5px;
     }
 
+    .PhotoGalleryContainer {
+        justify-content:center;
+    }
+
     .PhotoButton {
         width: 48px;
         height: 48px;
