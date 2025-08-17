@@ -21,12 +21,13 @@ function App() {
       <div className="app">
         <Header NavigateCommand={NavigateToPage} />
         <div className="Main">
-          {
-            activePage === "Home" ? <div className="HomePage"><Home /></div> : <div className="HomePage Invisible"><Home /></div>
-          }
-          {
-            activePage === "Donate" ? <div className="DonatePage"><Donate /></div> : <div className="DonatePage Invisible"><Donate /></div>
-          }
+          <div className="ActivePage">
+            {
+              activePage === "Home" ? <Home /> :
+              activePage === "Donate" ? <Donate /> :
+              <div>Page Navigation Error</div>
+            }
+          </div>
         </div>
         <Footer />
       </div>
