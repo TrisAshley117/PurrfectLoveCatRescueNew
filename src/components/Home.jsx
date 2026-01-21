@@ -112,14 +112,14 @@ const Home = () => {
                             </ul>
                         </ul>
                     </div>
-                    <div className="EventsContent">
+                    {/* <div className="EventsContent">
                         <div className="EventsHeader">
                                 <b>Events</b>
                         </div>
                         <ul className="Events">
                             <li>No upcoming events</li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <ZoomedImage IsVisible={imageZoomed} imgSrc={images[currentIndex]} zoomOutCommand={zoomImageOut} />
