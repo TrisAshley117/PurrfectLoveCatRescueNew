@@ -50,6 +50,8 @@ button {
   background-color: #7030a0;
   cursor: pointer;
   transition: all 0.25s;
+  color: white;
+  --webkit-appearence: none;
 }
 button:hover {
   background-color: #f8c6d8;
