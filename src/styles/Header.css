@@ -56,6 +56,10 @@
     flex-direction: row;
 }
 
+.HeaderButton {
+    margin-right: 8px;
+}
+
 @media (max-width: 768px) {
     .HeaderContainer {
         flex-direction: row;
@@ -113,5 +117,9 @@
     .Navigatable:active {
         color: white;
         background-color: var(--color-primary);
+    }
+
+    .HeaderButton {
+       font-size: 0.8rem;
     }
 }

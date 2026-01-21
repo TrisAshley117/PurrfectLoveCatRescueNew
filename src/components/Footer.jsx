@@ -9,9 +9,9 @@ const Footer = () => {
                 <br />
                 Purrfect Love Cat Rescue © Copyright. All Rights Reserved  | <u><a href='https://google.com'>Privacy Policy</a></u>
             </div>
-            <button className='DonateNowButton'>
+            {/* <button className='DonateNowButton'>
                 Donate Now
-            </button>
+            </button> */}
         </div>
     )
 }
