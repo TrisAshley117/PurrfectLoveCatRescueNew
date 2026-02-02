@@ -30,6 +30,7 @@ function App() {
           </div>
         </div>
         <Footer />
+          <div className="Spacer" />
       </div>
     </>
   )
