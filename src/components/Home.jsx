@@ -101,13 +101,16 @@ const Home = () => {
                 <div className="EventsContainer">
                     <div className="EventsContent">
                         <div className="EventsHeader">
-                                <b>Adoptions</b>
+                                <b>Adoption Information</b>
                         </div>
                         <ul className="Events">
-                            <li>Weekly adoptions held at Pet Super Market in Vestavia!</li>
+                            <li>Weekly adoptions held at Pet Smart in Hoover, AL</li>
+                            <li>Come meet & hold cats & kittens!</li>
+                            <li>Adoption forms available to fill out in store</li>
+                            <li>Adoption Hours:</li>
                             <ul className="SubEvents">
-                                <li><b>Friday:</b> 2:30 PM - 6:00 PM</li>
-                                <li><b>Saturday:</b> 1:00 PM - 4:30 PM</li>
+                                <li><b>Friday:</b> 2:30 PM - 5:00 PM</li>
+                                <li><b>Saturday:</b> 1:30 PM - 4:30 PM</li>
                                 <li><b>Sunday:</b> 1:00 PM - 4:30 PM</li>
                             </ul>
                         </ul>
