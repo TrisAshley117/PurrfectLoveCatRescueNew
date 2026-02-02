@@ -37,6 +37,10 @@ html, body, #root {
   display:block;
 }
 
+.Spacer {
+    Display: none;
+}
+
 @media (max-width: 768px) {
   html, body, #root {
     height: 100%;
@@ -52,4 +56,11 @@ html, body, #root {
   .Main {
     padding: 4px;
   }
+
+    .Spacer {
+        display: block;
+        width: 100%;
+        height: 16px;
+        visibility: hidden;
+    }
 }
