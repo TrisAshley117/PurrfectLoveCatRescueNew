@@ -7,9 +7,12 @@ const ZoomedImage = ({IsVisible, imgSrc, zoomOutCommand}) => {
     return (
         <div className='ImageOverlay'>
             <div className="ImageContainer">
-                <img src={imgSrc} alt='hi' class="ZoomedImage" />
-                <div className="CloseButton" onClick={zoomOutCommand}>x</div>
+                <img src={imgSrc} alt='hi' className="ZoomedImage" />
+                <div className="CloseButton" onClick={zoomOutCommand}>
+                    <div>✕</div>
+                </div>
             </div>
+            <button className="MobileCloseButton" onClick={zoomOutCommand}>Close</button>
         </div>
     )
 }

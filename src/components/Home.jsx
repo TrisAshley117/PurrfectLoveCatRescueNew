@@ -4,12 +4,19 @@ import '../styles/Home.css'
 import {FaArrowLeft, FaArrowRight, FaCircle} from 'react-icons/fa'
 import ZoomedImage from '../components/ZoomedImage.jsx'
 
-import img1 from '../assets/DevTest/Sample1.png'
-import img2 from '../assets/DevTest/Sample2.png'
-import img3 from '../assets/DevTest/Sample3.png'
-import img4 from '../assets/DevTest/Sample4.png'
+import img1 from '../assets/Live/Slide_1.jpeg'
+import img2 from '../assets/Live/Slide_2.jpeg'
+import img3 from '../assets/Live/Slide_3.jpeg'
+import img4 from '../assets/Live/Slide_4.jpeg'
+import img5 from '../assets/Live/Slide_5.jpeg'
+import img6 from '../assets/Live/Slide_6.jpeg'
+import img7 from '../assets/Live/Slide_7.jpeg'
+import img8 from '../assets/Live/Slide_8.jpeg'
+import img9 from '../assets/Live/Slide_9.jpeg'
+import img10 from '../assets/Live/Slide_10.jpeg'
+import img11 from '../assets/Live/Slide_11.jpeg'
 
-const images = [img1, img2, img3, img4]
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]
 
 const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
