@@ -12,6 +12,7 @@ const Footer = () => {
             {/* <button className='DonateNowButton'>
                 Donate Now
             </button> */}
+            <div className='Credit'>Website Created By Tristan "Tris" Ashley</div>
         </div>
     )
 }

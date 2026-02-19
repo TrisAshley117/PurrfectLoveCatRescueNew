@@ -200,6 +200,11 @@
     margin-left: 24px;
 }
 
+.SubEvent {
+    font-size: 14px;
+    opacity: 85%;
+}
+
 @media (max-width: 768px) {
     .MissionStatementContainer {
         width: 100%;

@@ -29,6 +29,13 @@
   border: 1px solid var(--color-primary);
 }
 
+.Credit {
+    width: 150px;
+    word-break: break-all;
+    text-align: center;
+    padding-right: 8px;
+}
+
 @media (max-width: 768px) {
     .FooterContainer {
         display: flex;
@@ -49,5 +56,10 @@
         transition: all ease 0.3s;
         width: 100%;
         margin-top:8px;
+    }
+
+    .Credit {
+        width: 100%;
+        padding-top: 8px;
     }
 }
