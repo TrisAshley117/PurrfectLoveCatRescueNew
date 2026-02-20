@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='FooterContainer'>
             <div className='LegalInfo'>
-                Purrfect Love Cat Rescue is a nonprofit 501 (c) (3) charity.
+                Purrfect Love Cat Rescue is a nonprofit 501 (c) (3) charity. EIN #46-2981915
                 <br />
                 Purrfect Love Cat Rescue © Copyright. All Rights Reserved
             </div>
