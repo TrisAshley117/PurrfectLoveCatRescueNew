@@ -20,6 +20,9 @@ function App() {
     <>
       <div className="app">
         <Header NavigateCommand={NavigateToPage} />
+        <div className="banner">
+          <b>Notice: Venmo donations through Paypal are currently not working, please direct ALL Venmo donations directly with the app. Thank you!</b>
+        </div>
         <div className="Main">
           <div className="ActivePage">
             {
