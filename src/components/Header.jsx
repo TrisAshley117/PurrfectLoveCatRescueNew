@@ -13,7 +13,7 @@ const Header = ({NavigateCommand}) => {
     // }
 
     const NavigateToDonationPage = () => {
-        window.open("https://paypal.me/purrfectlovecats", "_blank", "noopener,noreferrer")
+        window.open("https://www.paypal.com/donate/?hosted_button_id=TFA2VE7K58EWN", "_blank", "noopener,noreferrer")
     }
 
     return (
