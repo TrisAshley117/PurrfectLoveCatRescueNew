@@ -131,7 +131,7 @@ const Home = () => {
                             <li className='Event'>Thank you for considering donating! You can donate using one of the below options!</li>
                             <ul className='SubEvents'>
                                 <li className='SubEvent'>Use the Donate Button in the top right of the page to donate with Paypal (Account NOT required!)</li>
-                                <li className="SubEvent">We also accept donations on Venmo, please direct to @Purrfectlovecatrescue</li>
+                                <li className="SubEvent"><b>NEW: We accept donations on Venmo, direct to @Purrfectlovecatrescue in the Venmo App</b></li>
                             </ul>
                         </ul>
                         <div className="EventsHeader">
