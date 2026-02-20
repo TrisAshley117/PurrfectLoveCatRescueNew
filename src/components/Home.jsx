@@ -124,6 +124,24 @@ const Home = () => {
                                 <li className="SubEvent"><b>Sunday:</b> 1:00 PM - 4:30 PM</li>
                             </ul>
                         </ul>
+                        <div className="EventsHeader">
+                                <b>Social Media</b>
+                        </div>
+                            <ul className='Events'>
+                            <li>Follow us on social media to stay up to date with us!</li>
+                            <ul className="SubEvents">
+                                <li className='SubEvent'><a href="https://www.facebook.com/purrfectlovecatrescue" target="_blank"><b>Facebook (Click or tap to visit!)</b></a></li>
+                            </ul>
+                        </ul>
+                        <div className="EventsHeader">
+                                <b>Contact</b>
+                        </div>
+                        <ul className="Events">
+                            <li>For all communications, please reach out to us using our official email!</li>
+                            <ul className='SubEvents'>
+                                <li className='SubEvent'>PurrfectLoveCatRescue1@gmail.com</li>
+                            </ul>
+                        </ul>
                     </div>
                     {/* <div className="EventsContent">
                         <div className="EventsHeader">
