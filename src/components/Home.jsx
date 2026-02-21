@@ -101,7 +101,7 @@ const Home = () => {
                     </div>
                     <div className='RealityCheckContainer'>
                         <div className="RealityCheck">
-                            <p>Many imagine feral cats living free and healthy in nature—but the truth is far harsher. These cats often scavenge from garbage, shelter in unsafe places, and face constant threats from starvation, disease, predators, and even people. Many are hit by cars, poisoned, or suffer from parasites. Without help, half of all feral kittens die within their first year.</p><br /><p>At Purrfect Love Cat Rescue, we work to rescue, rehabilitate, and rehome these forgotten felines. Explore our site to meet some of our ferals, see our adoptable cats and kittens, and learn how you can help us reduce their suffering and overpopulation.</p>
+                            <p>Many imagine feral cats living free and healthy in nature—but the truth is far harsher. These cats often scavenge from garbage, shelter in unsafe places, and face constant threats from starvation, disease, predators, and even people. Many are hit by cars, poisoned, or suffer from parasites. Without help, half of all feral kittens die within their first year.</p><br /><p>At Purrfect Love Cat Rescue, we work to rescue, rehabilitate, and find forever homes for these forgotten felines. Our cats and kittens are available for adoption at Pet Smart in Hoover, AL. Many can be seen on our Facebook page too!</p>
                         </div>
                     </div>
                 </div>
