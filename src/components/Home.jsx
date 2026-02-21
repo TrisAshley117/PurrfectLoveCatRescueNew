@@ -101,34 +101,44 @@ const Home = () => {
                     </div>
                     <div className='RealityCheckContainer'>
                         <div className="RealityCheck">
-                            <p>Many imagine feral cats living free and healthy in nature—but the truth is far harsher. These cats often scavenge from garbage, shelter in unsafe places, and face constant threats from starvation, disease, predators, and even people. Many are hit by cars, poisoned, or suffer from parasites. Without help, half of all feral kittens die within their first year.</p><br /><p>At Purrfect Love Cat Rescue, we work to rescue, rehabilitate, and rehome these forgotten felines. Explore our site to meet some of our ferals, see our adoptable cats and kittens, and learn how you can help us reduce their suffering and overpopulation.</p>
+                            <p>Many imagine feral cats living free and healthy in nature—but the truth is far harsher. These cats often scavenge from garbage, shelter in unsafe places, and face constant threats from starvation, disease, predators, and even people. Many are hit by cars, poisoned, or suffer from parasites. Without help, half of all feral kittens die within their first year.</p><br /><p>At Purrfect Love Cat Rescue, we work to rescue, rehabilitate, and find forever homes for these forgotten felines. Our cats and kittens are available for adoption at Pet Smart in Hoover, AL. Many can be seen on our Facebook page too!</p>
                         </div>
                     </div>
                 </div>
                 <div className="EventsContainer">
                     <div className="EventsContent">
                         <div className="EventsHeader">
-                                <b>Adoption Information</b>
+                                <b>Adoptions</b>
                         </div>
                         <ul className="Events">
-                            <li>Weekly adoptions held at Pet Smart in Hoover!</li>
+                            <li className='Event'>Weekly adoptions held at Pet Smart in Hoover!</li>
                             <ul className="SubEvents">
                                 <li className="SubEvent">3770 Riverchase Village Ste 3 Hoover, AL 35244</li>
                                 <li className="SubEvent">Come meet & hold cats & kittens!</li>
                                 <li className="SubEvent">Adoption forms available to fill out in store</li>
                             </ul>
-                            <li>Adoption Hours:</li>
+                            <li className='Event'>Adoption Hours:</li>
                             <ul className="SubEvents">
                                 <li className="SubEvent"><b>Friday:</b> 2:30 PM - 5:00 PM</li>
                                 <li className="SubEvent"><b>Saturday:</b> 1:30 PM - 4:30 PM</li>
                                 <li className="SubEvent"><b>Sunday:</b> 1:00 PM - 4:30 PM</li>
                             </ul>
                         </ul>
+                        <div className='EventsHeader'>
+                            <b>Donations</b>
+                        </div>
+                        <ul className='Events'>
+                            <li className='Event'>Thank you for considering donating! You can donate using one of the below options!</li>
+                            <ul className='SubEvents'>
+                                <li className='SubEvent'>Use the Donate Button in the top right of the page to donate with Paypal (Account NOT required!)</li>
+                                <li className="SubEvent"><b>NEW: We accept donations on Venmo, direct to @Purrfectlovecatrescue in the Venmo App</b></li>
+                            </ul>
+                        </ul>
                         <div className="EventsHeader">
                                 <b>Social Media</b>
                         </div>
                             <ul className='Events'>
-                            <li>Follow us on social media to stay up to date with us!</li>
+                                <li className='Event'>Follow us on social media to stay up to date with us!</li>
                             <ul className="SubEvents">
                                 <li className='SubEvent'><a href="https://www.facebook.com/purrfectlovecatrescue" target="_blank"><b>Facebook (Click or tap to visit!)</b></a></li>
                             </ul>
@@ -137,7 +147,7 @@ const Home = () => {
                                 <b>Contact</b>
                         </div>
                         <ul className="Events">
-                            <li>For all communications, please reach out to us using our official email!</li>
+                            <li className='Event'>For all communications, please reach out to us using our official email!</li>
                             <ul className='SubEvents'>
                                 <li className='SubEvent'>PurrfectLoveCatRescue1@gmail.com</li>
                             </ul>
